@@ -46,9 +46,9 @@
         div.time-line {
             position: fixed;
             background-color: #007AFF;
-            margin-left: 22px;
+            margin-left: 24px;
             height: 100%;
-            width: 20px;
+            width: 16px;
             top: 0px;
         }
         div{
@@ -68,11 +68,12 @@
         }
         div.new-background {
             width: 100%;
-            height: 100%;
             position: relative;
             z-index: 200;
             background-color: #000000;
             box-shadow: 0px 0px 16px #000000;
+            margin: 0px;
+            border-radius: 8px;
         }
         h1, h2, h3, h4, h5, h6 {
             text-align: center;
@@ -82,16 +83,38 @@
             text-align: center;
             color: #FFFFFF;
         }
+        .left {
+            text-align: left;
+            margin-left: 64px;
+        }
         h4 {
             font-size: 100%;
             z-index: 250;
         }
+        hr {
+            width: 50%;
+            height: 4px;
+            border: 0px;
+            background-color: #FFFFFF;
+            border-radius: 2px;
+        }
+        .long-margin {
+            margin-left: 160px;
+        }
+        .absolute {
+            position: absolute;
+        }
+        .new-content {
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
     <body>
         <div class="time-line"></div>
-        <div class="title"><h4>Life Of Galileo Galilei</h4></div>
-        <br>
-        <br>
+        <div class="time-line-cell">
+            <img class="left absolute" src="images/galileo.png" width="84px"><h1 class="left long-margin">Life Of Galileo Galilei</h1><h2 class="left long-margin">In Timeline</h2>
+        </div>
         <div class="time-line-cell">
             <img class="time-line-cell-img" src="images/time-line-cell.svg">
             <div class="time-tag">Feb. 15, 1564</div>
@@ -192,15 +215,62 @@
             <div class="time-tag">1638</div>
             <div class="time-line-cell-content">Galileo's Two Sciences is published in Holland and is now called the kinematics and strength of materials</div>
         </div>
-        <br>
-        <br>
-        <div class="new-background">
-            <br>
-            <h1>Galileo & the Renaissance</h1>
-            <img id="banner" src="images/heading.png">
-            <div>When did Galileo Galilei Apears on in the renaissance</div>
+        <div class="time-line-cell">
+            <img class="time-line-cell-img" src="images/time-line-cell.svg">
+            <div class="time-tag">January 8, 1642</div>
+            <div class="time-line-cell-content">Galileo Galilei Died</div>
         </div>
+        <br>
+        <br>
         <div class="new-background">
+            <div class="new-content">
+                    <br>
+                    <h1>Galileo & the Renaissance</h1>
+                    <br>
+                    <hr>
+                    <h2>The period that Galileo Galilei lives in the Renaissance</h2>
+                    <img id="banner" src="images/time-line.png">
+                    <br>
+                    <br>
+                    <hr>
+                    <h2>How did Galileo Galilei Influence the world?</h2>
+                    <h4>The Ways of Experimentations</h4>
+                    <h5>In the past, the one who controls the religion provide the 'true answers', and the public hace to believe the, in fact, mostly based on faith.  And galileo designed a set of rules for experiments that is still being used today.  He did not take the results under several different varible values, and he will not believe the statements that out of experiments.  These rules is so influential that the scientist in morden age still keep using it, because that is how our morden science works basically.</h5>
+                    <h4>Change How Mathematics Works</h4>
+                    <h5>Galileo changed the way that how math works, which is to understand how the world actually works.  And he allowed other scientists, like Newton, to build upon his work.</h5>
+                    <br>
+                    <br>
+                    <hr>
+                    <h2>By Peter.L.</h2>
+                    <br>
+                    <h4>References:</h4>
+                    <br>
+                    <h6>https://www.history.com</h6>
+                    <h6>https://www.italian-renaissance-art.com/Renaissance-Timeline.html</h6>
+                    <h6>https://sciencestruck.com/timeline-of-galileos-inventions-discoveries</h6>
+                    <h6>http://www.softschools.com/timelines/galileo_galilei_timeline/372/</h6>
+                    <h6>http://galileo.rice.edu/chron/galileo.html</h6>
+                    <h6>https://www.merriam-webster.com/dictionary/seconda%20prattica</h6>
+                    <h6>http://www.sackbut.com/</h6>
+                    <h6>https://en.wikipedia.org/wiki/International_Standard_Book_Number</h6>
+                    <h6>https://sciencing.com/galileos-effects-science-today-8214085.html</h6>
+                    <br>
+                    <h5><a href="https://github.com/peterzililuo/galileo-galilei">Website Source Code On Github</a></h5>
+                    <h5><a href="resources/galileo&renaissance.pdf">Download this page as PDF</a></h5>
+                    <br>
+                </div>
         </div>
     </body>
+    <style type="text/css">
+        a {
+            color: #006BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #008AFF;
+        }
+        a:visited {
+            color: #006BFF;
+        }
+    </style>
 </html>
